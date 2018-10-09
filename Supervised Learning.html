@@ -11795,7 +11795,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Steps-for-Supervised-Learning">Steps for Supervised Learning<a class="anchor-link" href="#Steps-for-Supervised-Learning">&#182;</a></h4><p>So now let's talk about what exactly do we need to do when we are given a supervised learning problem. Whenever you'll be given a supervised learning problem, what you'll be given is basically some training data. This training data will consist of say n + 1 columns, where n of these columns are your features (or input characteristics), and the last one is the column for output. Let's say we are given m such rows of data. So we have m training data points, and each datapoint has n features, and one output associated with it. So that's how generally, you'd be given the data.</p>
-<p><img src="attachment:supervised_learning.png" alt="supervised_learning.png"></p>
+<p><img src="images/SupervisedLearning1.png" alt=""></p>
 <p>Now what exactly will be the steps that we will take to make our machine learning model or algorithm.</p>
 <ol>
 <li>Find data <ul>
@@ -11830,12 +11830,12 @@ div#notebook {
 </ul>
 </li>
 </ul>
-<p><img src="attachment:Case1.png" alt="Case1.png"></p>
+<p><img src="images/SupervisedLearning2.png" alt=""></p>
 <p>The idea is not to perform well on the past experience the idea is that in future, the algorithm should be able to predict what's going to be the output. That's what the algorithm is supposed to do.</p>
 <ul>
 <li>Generally, what should be done is, if you are being provided with 80 data point entries, you should keep some percentage of it aside, let's say 30 percent. So you keep 24 data points aside and you keep 56 as your training data. You don't use the 24 data points which has been kept aside for testing. When you are working on Algorithm 1, you give the 56 data points and when you're working on Algorithm 2, you again give 56 data points. And when you have to test it to find how good a particular algorithm is, you give the 24 data points, which the algorithm has not seen before. So, initially, we were given 80 data points. We had the X as well as Y for the 80 data points. Which we divided into 56 and 24 with their respective X's and Y's. Let's call them X_train, Y_train for 56 data points and X_test, Y_test for the 24 data points. So, you give X_train, Y_train while training the algorithm, but while testing you only give X_test, and you get Y_test_pred (predictions). And now you compare Y_test_pred (predictions) with Y_test. Because Y_test is something that the algorithm has never seen, and if it is performing good on that, it means my algorithm is good. So if an algorithm is going to do really well on training data, but is not going to do well on testing data, that means it's kind of remembering the training data, it's overfitting the training data, it's just trying to match exactly with the training data. And that's going to be a bad solution. We'll always keep some data aside or on hold (often called as holdout data), so that we test the algorithm with that later.</li>
 </ul>
-<p><img src="attachment:Case2.png" alt="Case2.png"></p>
+<p><img src="images/SupervisedLearning3.png" alt=""></p>
 
 </div>
 </div>
