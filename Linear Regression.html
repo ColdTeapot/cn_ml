@@ -11784,7 +11784,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Linear-Regression">Linear Regression<a class="anchor-link" href="#Linear-Regression">&#182;</a></h4><p>This is a regression algorithm. That basically means it can be very useful to predict some continuous spectrum of output. Given an input, I want my algorithm to start predicting some output.</p>
-<p><img src="attachment:LinearRegression1.png" alt="LinearRegression1.png"></p>
+<p><img src="images/LR1.png" alt=""></p>
 
 </div>
 </div>
@@ -11794,7 +11794,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Ideally what happens is, given the training data, the algorithm learns. What  doesn it learn? It learns some function, and it's going to remember function by itself, so that next time you give it a X, it predicts the Y for you using the same function that it learnt from the training data that you provided.</p>
-<p><img src="attachment:LinearRegression2.png" alt="LinearRegression2.png"></p>
+<p><img src="images/LR2.png" alt=""></p>
 
 </div>
 </div>
@@ -11804,9 +11804,9 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So now what can be this function? We sometimes call it Hypothesis.</p>
-<p><img src="attachment:LR3.png" alt="LR3.png"></p>
+<p><img src="images/LR3.png" alt=""></p>
 <p>So it's our hypothesis that this function fits the data. So what linear regression does is, it tries to put a linear function out there. Let's say we have three features x1, x2, x3 and we have an output y. Let's assume the  that y = m1x1 + m2x2 + m3x3 + b, where b is a constant term and then you are dependent on each each feature linearly. The more you are dependent on the feature, it should basically decide which feature I'm more dependent upon by varying m1 or m2 or m3and b. So the idea is, that this is the function we need to get to. To get to this function, what are you missing? You are basically missing the 4 parameters m1, m2, m3, and b. So you somehow need to learn these 4 parameters. So when you get the training data, we need to figure out a way to calculate m1, m2, m3 and b. So if you have this from your training data, whenever you want to test something,  you can just plug the values of x1, x2, x3 and you will get the output y that you are looking for.</p>
-<p><img src="attachment:LR4.png" alt="LR4.png"></p>
+<p><img src="images/LR4.png" alt=""></p>
 
 </div>
 </div>
@@ -11825,15 +11825,15 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Let's now consider and assume that the input we are given has only one x and one y. That means that we have only one feature. With one feature and one output it will be easier to plot graphs, so that's why let's only pick one input and one output, and let's see what linear regression is trying to do. Let's say my training data flows like  as shown in the image below:</p>
-<p><img src="attachment:LR5.png" alt="LR5.png"></p>
+<p><img src="images/LR5.png" alt=""></p>
 <p>What linear regression will try and do is, it will try and fit it with one line such that it is nearest to all these points.</p>
-<p><img src="attachment:LR6.png" alt="LR6.png"></p>
+<p><img src="images/LR6.png" alt=""></p>
 <p>The error for each individual point is the least (aim is to reduce the combined error), and the error can be defined as how far away you are from the actual value. The intuition is that we will try to find the best fit line. For example, we could have drawn another line as shown in the figure below, but it feels like this will be a bad decision because intuitively it feels that the previous line fits the data better.</p>
-<p><img src="attachment:LR7.png" alt="LR7.png"></p>
+<p><img src="images/LR7.png" alt=""></p>
 <p>But within this, there are definitely possibilities of let's say creating this line as shown in figure below.</p>
-<p><img src="attachment:LR8.png" alt="LR8.png"></p>
+<p><img src="images/LR8.png" alt=""></p>
 <p>Now it's not that obvious which line is better. So what linear regression is going to do is, For it will mathematically find some logic to minimise the error that we get and find the best fit line. When we are saying find the best fit line, what is it mean? For example, in two dimensions,  your equation of line is going to look like y = mx + c. So we are looking to find m and c. If you have n features, then you need to find n + 1 parameters because there is one constant value as well which is the intercept. So the eventual line will be like y = mx + c. This is slope intercept form. 'c' is the intercept and 'm' is the slope.</p>
-<p><img src="attachment:LR9.png" alt="LR9.png"></p>
+<p><img src="images/LR9.png" alt=""></p>
 
 </div>
 </div>
